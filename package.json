@@ -2,5 +2,12 @@
   "name": "typescript",
   "version": "0.0.0",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "@types/bootstrap": "^4.3.0",
+    "@types/jquery": "^3.3.29",
+    "bootstrap": "^4.3.1",
+    "bootstrap-scss": "^4.3.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.7"
+  }
 }

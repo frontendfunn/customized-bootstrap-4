@@ -1,3 +1,6 @@
-@function rem($value) {
-  @return unquote(($value/1px)/16+"rem");
+@import "custom/required"; /*contains all the imports necessary for the bootstrap*/
+@import "custom/customFont"; /*Custom Font Imported*/
+
+body{
+  font-family: $fontFamily;
 }

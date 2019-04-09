@@ -1,0 +1,26 @@
+/*required bootstrap Imports*/
+@import "bootstrap-scss/functions";
+@import "bootstrap-scss/variables";
+@import "bootstrap-scss/mixins";
+
+/*
+Removing the Basic colors of bootstrap from theme colors using map-remove()
+*/
+$theme-colors: map-remove(
+  $theme-colors,
+  "primary",
+  "secondary",
+  "success",
+  "danger",
+  "warning",
+  "info",
+  "light",
+  "dark"
+);
+
+/*Custom SCSS*/
+@import "./remFun"; /*SCSS Function which Converts Pixel Values to rems */
+@import "./colors"; /* Contains all the colors which are required in a $colorsList map */
+
+/*adding the colors to the theme-colors using map-merge*/
+$theme-colors: map-merge($colorsList, $theme-colors);
